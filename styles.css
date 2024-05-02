@@ -1,0 +1,13 @@
+body > .subdomain-navigator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20em;
+}
+
+body > .subdomain-navigator ul {
+  display: flex;
+  flex-flow: column nowrap;
+  list-style: none;
+}
+
