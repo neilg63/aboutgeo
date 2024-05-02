@@ -5,6 +5,7 @@ body > .subdomain-navigator {
   max-width: 20em;
   padding: 1em;
   z-index: 102;
+  box-sizing: border-box;
 }
 
 .toggle-subdomain-menu {
@@ -25,11 +26,30 @@ body > .subdomain-navigator ul {
   flex-flow: column nowrap;
   list-style: none;
   margin: 0;
-  padding: 1em 0;
+  padding: 0.5em;
+  border-radius: 0.5em;
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
+}
+
+body > .subdomain-navigator ul > li {
+  padding: 0;
+  width: 100%;
+}
+
+body > .subdomain-navigator ul > li a {
+  display: block;
+  width: 100%;
+  padding: 0.25em 0.375em;
+  color: blue;
+  text-decoration: none;
+  transition: color 0.333s ease-in-out;
+}
+
+body > .subdomain-navigator ul > li a:hover {
+  color: turquoise;
 }
 
 body > .subdomain-navigator ul,
