@@ -41,7 +41,7 @@ body > .subdomain-navigator ul {
   display: flex;
   flex-flow: column nowrap;
   list-style: none;
-  margin: 0.25em;
+  margin: 0 0.25rem;
   padding: 0;
   list-style-type: none;
   margin-block-start: 0;
@@ -51,7 +51,7 @@ body > .subdomain-navigator ul {
 }
 
 body > .subdomain-navigator ul.main-site {
-  margin: 0 0 1em 0;
+  margin: 0.5rem 0.25rem;
 }
 
 body > .subdomain-navigator ul.subdomain-menu li {
@@ -64,6 +64,7 @@ body > .subdomain-navigator ul.main-site li {
 
 body > .subdomain-navigator ul > li {
   padding: 0;
+  margin: 0;
   width: 100%;
 }
 

@@ -43,17 +43,22 @@
     document.body.appendChild(innerNav);
     const infoUrl = [remoteUrl, 'info.html'].join('/')  + qs;
     fetch(infoUrl).then(response => response.text()).then(content => {
-      const innerInfo = document.createElement('aside');
-      innerInfo.classList.add('subdomain-info');
-      innerInfo.innerHTML = content;
-      const closeDiv = document.createElement('div');
-      closeDiv.textContent = '⤫';
-      closeDiv.setAttribute('class', 'close control-icon');
-      innerInfo.appendChild(closeDiv);
-      closeDiv.addEventListener('click', (e) => {
-        closeBodyClass('subdomain-menu');
-      });
-      document.body.appendChild(innerInfo);
+      if (typeof content === 'string') {
+        const textLen = content.length;
+        if (textLen > 300) {
+          const innerInfo = document.createElement('aside');
+          innerInfo.classList.add('subdomain-info');
+          innerInfo.innerHTML = content;
+          const closeDiv = document.createElement('div');
+          closeDiv.textContent = '⤫';
+          closeDiv.setAttribute('class', 'close control-icon');
+          innerInfo.appendChild(closeDiv);
+          closeDiv.addEventListener('click', (e) => {
+            closeBodyClass('subdomain-menu');
+          });
+          document.body.appendChild(innerInfo);
+        }
+      }
     })
   })
 })();
