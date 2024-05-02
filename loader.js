@@ -1,7 +1,9 @@
 (function () {
   const remoteUrl = 'https://www.multifaceted.info/subdomain-info';
   const menuUrl = [remoteUrl, 'menu.html'].join('/');
-  const cssFile = [remoteUrl, 'styles.css'].join('/');
+  const ts = Date.now() % 1000000;
+  const qs = '?ts='.ts.toString();
+  const cssFile = [remoteUrl, 'styles.css'].join('/') + qs;
   const el = document.createElement('link');
   el.rel = 'stylesheet';
   el.crossorigin = 'anonymous';
