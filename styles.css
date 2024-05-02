@@ -10,17 +10,18 @@ body > .subdomain-navigator {
 }
 
 .toggle-subdomain-menu {
-  font-size: 2em;
+  font-size: 1.6667em;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0.25em;
+  padding: 0.125em;
   background-color: rgba(255, 255, 255, 0.75);
   border-bottom-right-radius: .5em;
 }
 
 .toggle-subdomain-menu:hover .inner {
   transform: rotate(20deg) scale(1.1);
+  color: #000066;
 }
 
 body > .subdomain-navigator > .inner {
