@@ -19,9 +19,13 @@ body > .subdomain-navigator {
   border-bottom-right-radius: .5em;
 }
 
+.toggle-subdomain-menu .inner {
+  color: #000066;
+}
+
 .toggle-subdomain-menu:hover .inner {
   transform: rotate(20deg) scale(1.1);
-  color: #000066;
+  color: #660033;
 }
 
 body > .subdomain-navigator > .inner {
