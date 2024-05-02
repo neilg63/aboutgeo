@@ -86,7 +86,7 @@ body > .subdomain-navigator ul > li a:hover {
   color: #660033;
 }
 
-body > .subdomain-navigator div.inner,
+body > .subdomain-navigator > div.inner,
 body .subdomain-info {
   opacity: 0;
   pointer-events: none;
