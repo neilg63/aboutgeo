@@ -39,6 +39,10 @@
       const innerInfo = document.createElement('aside');
       innerInfo.classList.add('subdomain-info');
       innerInfo.innerHTML = content;
+      const closeDiv = document.createElement('div');
+      closeDiv.textContent = '⤫';
+      closeDiv.classList.add('close');
+      innerInfo.appendChild(closeDiv)
       document.body.appendChild(innerInfo);
     })
   })
