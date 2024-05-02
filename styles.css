@@ -3,6 +3,7 @@ body > .subdomain-navigator {
   top: 0;
   left: 0;
   width: 20em;
+  background-color: yellow;
 }
 
 body > .subdomain-navigator ul {
