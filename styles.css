@@ -13,7 +13,6 @@ body > .subdomain-navigator {
   position: absolute;
   top: 0.25em;
   left: 0.25em;
-  cursor: pointer;
 }
 
 .toggle-subdomain-menu:hover {
@@ -65,6 +64,7 @@ body .control-icon {
   transition: transform 0.333s ease-in-out;
   height: 1em;
   width: 1em;
+  cursor: pointer;
 }
 
 body .subdomain-info {
@@ -93,4 +93,8 @@ body.show-subdomain-menu > .subdomain-info {
   pointer-events: all;
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
+}
+
+body.show-subdomain-menu > .subdomain-info {
+  border-radius: 0.5em;
 }
