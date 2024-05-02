@@ -35,7 +35,7 @@
     innerNav.innerHTML = menu;
     const toggleElement = document.createElement('div');
     const toggleInner = document.createElement('div');
-    toggleInner.setAttribute('class', 'control-icon');
+    toggleInner.setAttribute('class', 'inner control-icon');
     toggleInner.textContent = 'ⓘ';
     toggleElement.appendChild(toggleInner);
     toggleElement.setAttribute('class', 'toggle-subdomain-menu');

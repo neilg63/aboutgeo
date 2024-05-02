@@ -12,10 +12,11 @@ body > .subdomain-navigator {
 .toggle-subdomain-menu {
   font-size: 2em;
   position: absolute;
-  top: 0.25em;
-  left: 0.25em;
+  top: 0;
+  left: 0;
+  padding: 0.25em;
   background-color: rgba(255, 255, 255, 0.75);
-  border-bottom-right-radius: 1em;
+  border-bottom-right-radius: .5em;
 }
 
 .toggle-subdomain-menu:hover .inner {
