@@ -18,7 +18,7 @@ body > .subdomain-navigator {
   border-bottom-right-radius: 1em;
 }
 
-.toggle-subdomain-menu:hover {
+.toggle-subdomain-menu:hover .inner {
   transform: rotate(20deg) scale(1.1);
 }
 
