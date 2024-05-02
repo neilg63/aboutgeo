@@ -23,8 +23,8 @@ body > .subdomain-navigator ul {
   pointer-events: none;
 }
 
-body.show-subdomain-navigator > .subdomain-navigator ul,
-body.show-subdomain-navigator > .subdomain-info {
+body.show-subdomain-menu > .subdomain-navigator ul,
+body.show-subdomain-menu > .subdomain-info {
   opacity: 1;
   pointer-events: all;
 }
