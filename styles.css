@@ -4,7 +4,7 @@ body > .subdomain-navigator {
   left: 0;
   max-width: 20em;
   padding: 1em;
-  z-index: 102;
+  z-index: 402;
   box-sizing: border-box;
   text-align: left;
 }
