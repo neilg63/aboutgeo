@@ -12,7 +12,6 @@ body > .subdomain-navigator {
   position: absolute;
   top: 0.25em;
   left: 0.25em;
-  
 }
 
 body > .subdomain-navigator ul {
@@ -24,8 +23,18 @@ body > .subdomain-navigator ul {
   pointer-events: none;
 }
 
-body.show-subdomain-navigator > .subdomain-navigator ul {
+body.show-subdomain-navigator > .subdomain-navigator ul,
+body.show-subdomain-navigator > .subdomain-info {
   opacity: 1;
   pointer-events: all;
 }
 
+body .subdomain-info {
+  position: fixed;
+  top: 8rem;
+  left: 2.5%;
+  width: 95%;
+  max-width: 36rem;
+  opacity: 0;
+  pointer-events: none;
+}
