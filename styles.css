@@ -6,9 +6,24 @@ body > .subdomain-navigator {
   background-color: yellow;
 }
 
+body > .subdomain-navigator .toggle-subdomain-menu {
+  font-size: 2em;
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+}
+
 body > .subdomain-navigator ul {
+  margin-top: 2em;
   display: flex;
   flex-flow: column nowrap;
   list-style: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.show-subdomain-navigator > .subdomain-navigator ul {
+  opacity: 1;
+  pointer-events: all;
 }
 

@@ -25,10 +25,19 @@
     innerNav.classList.add('subdomain-navigator');
     innerNav.innerHTML = menu;
     const toggleElement = document.createElement('div');
-    toggleElement.classList.add('toggle-info-menu');
+    toggleElement.textContent = 'ⓘ';
+    toggleElement.classList.add('toggle-subdomain-menu');
     toggleElement.addEventListener('click', (e) => {
       toggleBodyClass('subdomain-menu');
-    })
+    });
+    innerNav.appendChild(toggleElement);
     document.body.appendChild(innerNav);
+    const infoUrl = [remoteUrl, 'info.html'].join('/');
+    fetch(infoUrl).then(response => response.text()).then(content => {
+      const innerInfo = document.createElement('aside');
+      innerInfo.classList.add('subdomain-info');
+      innerInfo.innerHTML = content;
+      document.body.appendChild(innerInfo);
+    })
   })
 })();
