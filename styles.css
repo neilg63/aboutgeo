@@ -1,7 +1,7 @@
 body > .subdomain-navigator {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0.25rem;
+  left: 2.5rem;
   max-width: 20em;
   padding: 1em;
   z-index: 102;
@@ -42,13 +42,13 @@ body > .subdomain-navigator ul > li a {
   display: block;
   width: 100%;
   padding: 0.25em 0.375em;
-  color: blue;
+  color: #000099;
   text-decoration: none;
   transition: color 0.333s ease-in-out;
 }
 
 body > .subdomain-navigator ul > li a:hover {
-  color: turquoise;
+  color: #006666;
 }
 
 body > .subdomain-navigator ul,
@@ -69,7 +69,7 @@ body .control-icon {
 
 body .subdomain-info {
   position: fixed;
-  top: 8rem;
+  top: 9rem;
   left: 2.5%;
   width: 95%;
   max-width: 36rem;
