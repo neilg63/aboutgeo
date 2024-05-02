@@ -12,14 +12,21 @@
   document.head.appendChild(el);
 
 
-  const toggleBodyClass = (key = '') => {
+  const toggleBodyClass = (key = '', mode = 0) => {
     const cn = ['show', key].join('-');
     const bCls = document.body.classList;
-    if (bCls.contains(cn)) {
+    const hasOpenClass = bCls.contains(cn);
+    const closeNow = mode === -1 || hasOpenClass;
+    const openNow = mode === 1 || !hasOpenClass;
+    if (closeNow) {
       bCls.remove(cn)
-    } else {
+    } else if (openNow) {
       bCls.add(cn)
     }
+  }
+
+  const closeBodyClass = (key = '') => {
+    toggleBodyClass(key, -1);
   }
 
   fetch(menuUrl).then(response => response.text()).then(menu => {
@@ -42,7 +49,10 @@
       const closeDiv = document.createElement('div');
       closeDiv.textContent = '⤫';
       closeDiv.setAttribute('class', 'close control-icon');
-      innerInfo.appendChild(closeDiv)
+      innerInfo.appendChild(closeDiv);
+      closeDiv.addEventListener('click', (e) => {
+        closeBodyClass('subdomain-menu');
+      });
       document.body.appendChild(innerInfo);
     })
   })
