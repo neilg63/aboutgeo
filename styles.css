@@ -63,7 +63,7 @@ body .subdomain-info .close {
 }
 
 body .subdomain-info .close:hover {
-  transform: rotate(90deg) scale(2.25);
+  transform: scale(2.5);
 }
 
 body.show-subdomain-menu > .subdomain-navigator ul,
