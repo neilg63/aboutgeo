@@ -2,8 +2,8 @@ body > .subdomain-navigator {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20em;
-  background-color: yellow;
+  max-width: 20em;
+  padding: 1em;
   z-index: 102;
 }
 
@@ -12,6 +12,9 @@ body > .subdomain-navigator {
   position: absolute;
   top: 0.25em;
   left: 0.25em;
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
 }
 
 body > .subdomain-navigator ul {
@@ -19,10 +22,13 @@ body > .subdomain-navigator ul {
   display: flex;
   flex-flow: column nowrap;
   list-style: none;
+}
+
+body > .subdomain-navigator ul,
+body .subdomain-info {
   opacity: 0;
   pointer-events: none;
 }
-
 
 body .subdomain-info {
   position: fixed;
@@ -30,8 +36,8 @@ body .subdomain-info {
   left: 2.5%;
   width: 95%;
   max-width: 36rem;
-  opacity: 0;
-  pointer-events: none;
+  padding: 1em;
+  
 }
 
 body.show-subdomain-menu > .subdomain-navigator ul,
