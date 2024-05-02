@@ -15,12 +15,15 @@ body > .subdomain-navigator {
   cursor: pointer;
   height: 1em;
   width: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   user-select: none;
   transition: transform 0.333s ease-in-out;
 }
 
 .toggle-subdomain-menu:hover {
-  transform: rotate(60deg) scale(1.2);
+  transform: rotate(20deg) scale(1.1);
 }
 
 body > .subdomain-navigator ul {
