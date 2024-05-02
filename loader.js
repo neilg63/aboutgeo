@@ -28,7 +28,7 @@
     innerNav.innerHTML = menu;
     const toggleElement = document.createElement('div');
     toggleElement.textContent = 'ⓘ';
-    toggleElement.classList.add('toggle-subdomain-menu control-icon');
+    toggleElement.setAttribute('class', 'toggle-subdomain-menu control-icon');
     toggleElement.addEventListener('click', (e) => {
       toggleBodyClass('subdomain-menu');
     });
@@ -41,7 +41,7 @@
       innerInfo.innerHTML = content;
       const closeDiv = document.createElement('div');
       closeDiv.textContent = '⤫';
-      closeDiv.classList.add('close control-icon');
+      closeDiv.setAttribute('class', 'close control-icon');
       innerInfo.appendChild(closeDiv)
       document.body.appendChild(innerInfo);
     })

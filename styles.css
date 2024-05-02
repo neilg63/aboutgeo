@@ -24,6 +24,12 @@ body > .subdomain-navigator ul {
   display: flex;
   flex-flow: column nowrap;
   list-style: none;
+  margin: 0;
+  padding: 1em 0;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 body > .subdomain-navigator ul,
@@ -36,9 +42,6 @@ body .control-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.333s ease-in-out;
-  cursor: pointer;
-  user-select: none;
   transition: transform 0.333s ease-in-out;
   height: 1em;
   width: 1em;
