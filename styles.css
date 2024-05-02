@@ -15,6 +15,12 @@ body > .subdomain-navigator {
   cursor: pointer;
   height: 1em;
   width: 1em;
+  user-select: none;
+  transition: transform 0.333s ease-in-out;
+}
+
+.toggle-subdomain-menu:hover {
+  transform: rotate(60deg) scale(1.2);
 }
 
 body > .subdomain-navigator ul {
@@ -37,7 +43,7 @@ body .subdomain-info {
   width: 95%;
   max-width: 36rem;
   padding: 1em;
-  
+
 }
 
 body.show-subdomain-menu > .subdomain-navigator ul,
