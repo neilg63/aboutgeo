@@ -13,13 +13,6 @@ body > .subdomain-navigator {
   top: 0.25em;
   left: 0.25em;
   cursor: pointer;
-  height: 1em;
-  width: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  transition: transform 0.333s ease-in-out;
 }
 
 .toggle-subdomain-menu:hover {
@@ -39,6 +32,18 @@ body .subdomain-info {
   pointer-events: none;
 }
 
+body .control-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.333s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.333s ease-in-out;
+  height: 1em;
+  width: 1em;
+}
+
 body .subdomain-info {
   position: fixed;
   top: 8rem;
@@ -46,7 +51,6 @@ body .subdomain-info {
   width: 95%;
   max-width: 36rem;
   padding: 1em;
-
 }
 
 body .subdomain-info .close {
@@ -54,12 +58,6 @@ body .subdomain-info .close {
   top: 0.5em;
   right: 0.5em;
   transform: scale(2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.333s ease-in-out;
-  cursor: pointer;
-  user-select: none;
 }
 
 body .subdomain-info .close:hover {
