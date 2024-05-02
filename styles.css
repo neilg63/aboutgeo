@@ -19,13 +19,18 @@ body > .subdomain-navigator {
   transform: rotate(20deg) scale(1.1);
 }
 
+body > .subdomain-navigator > .inner {
+  position: relative;
+  margin: 0 0 0 3rem;
+}
+
 body > .subdomain-navigator ul {
   position: relative;
   margin-top: 2em;
   display: flex;
   flex-flow: column nowrap;
   list-style: none;
-  margin: 0.25em 0 0 3rem;
+  margin: 0.25em;
   padding: 0.5em;
   border-radius: 0.5em;
   list-style-type: none;
@@ -92,7 +97,7 @@ body.show-subdomain-menu > .subdomain-navigator div.inner,
 body.show-subdomain-menu > .subdomain-info {
   opacity: 1;
   pointer-events: all;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
   color: black;
 }
 

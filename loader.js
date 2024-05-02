@@ -1,6 +1,6 @@
 (function () {
   const remoteUrl = 'https://www.multifaceted.info/subdomain-info';
-  const menuUrl = [remoteUrl, 'menu.html'].join('/');
+  
   const ts = Date.now() % 1000000;
   const qs = '?ts=' + ts.toString();
   const cssFile = [remoteUrl, 'styles.css'].join('/') + qs;
@@ -28,7 +28,7 @@
   const closeBodyClass = (key = '') => {
     toggleBodyClass(key, -1);
   }
-
+  const menuUrl = [remoteUrl, 'menu.html'].join('/') + qs;
   fetch(menuUrl).then(response => response.text()).then(menu => {
     const innerNav = document.createElement('nav');
     innerNav.classList.add('subdomain-navigator');
@@ -41,7 +41,7 @@
     });
     innerNav.appendChild(toggleElement);
     document.body.appendChild(innerNav);
-    const infoUrl = [remoteUrl, 'info.html'].join('/');
+    const infoUrl = [remoteUrl, 'info.html'].join('/')  + qs;
     fetch(infoUrl).then(response => response.text()).then(content => {
       const innerInfo = document.createElement('aside');
       innerInfo.classList.add('subdomain-info');
