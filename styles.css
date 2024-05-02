@@ -1,7 +1,7 @@
 body > .subdomain-navigator {
   position: fixed;
-  top: 0.25rem;
-  left: 2.5rem;
+  top: 0;
+  left: 0;
   max-width: 20em;
   padding: 1em;
   z-index: 102;
@@ -20,11 +20,12 @@ body > .subdomain-navigator {
 }
 
 body > .subdomain-navigator ul {
+  position: relative;
   margin-top: 2em;
   display: flex;
   flex-flow: column nowrap;
   list-style: none;
-  margin: 0;
+  margin: 0.25em 0 0 3rem;
   padding: 0.5em;
   border-radius: 0.5em;
   list-style-type: none;
