@@ -24,6 +24,14 @@ body > .subdomain-navigator > .inner {
   margin: 0 0 0 3rem;
   padding: 1em;
   border-radius: 0.5em;
+  width: 80%;
+  max-width: 24rem;
+}
+
+body > .subdomain-navigator > .inner h3 {
+  font-size: 1em;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 
@@ -39,6 +47,7 @@ body > .subdomain-navigator ul {
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
+  width: 100%;
 }
 
 body > .subdomain-navigator ul.main-site {
@@ -61,7 +70,7 @@ body > .subdomain-navigator ul > li {
 body > .subdomain-navigator ul > li a {
   display: block;
   width: 100%;
-  padding: 0.25em 0.375em;
+  padding: 0.125rem 0.25rem;
   color: #000066;
   text-decoration: none;
   transition: color 0.333s ease-in-out;
