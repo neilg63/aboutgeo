@@ -34,8 +34,11 @@
     innerNav.classList.add('subdomain-navigator');
     innerNav.innerHTML = menu;
     const toggleElement = document.createElement('div');
-    toggleElement.textContent = 'ⓘ';
-    toggleElement.setAttribute('class', 'toggle-subdomain-menu control-icon');
+    const toggleInner = document.createElement('div');
+    toggleInner.setAttribute('class', 'control-icon');
+    toggleInner.textContent = 'ⓘ';
+    toggleElement.appendChild(toggleInner);
+    toggleElement.setAttribute('class', 'toggle-subdomain-menu');
     toggleElement.addEventListener('click', (e) => {
       toggleBodyClass('subdomain-menu');
     });
