@@ -24,9 +24,14 @@ body > .subdomain-navigator > .inner {
   margin: 0 0 0 3rem;
 }
 
+body > .subdomain-navigator > .inner {
+  margin: 0 1em;
+  padding: 0;
+}
+
 body > .subdomain-navigator ul {
   position: relative;
-  margin-top: 2em;
+  margin: 1em 0;
   display: flex;
   flex-flow: column nowrap;
   list-style: none;
@@ -37,6 +42,18 @@ body > .subdomain-navigator ul {
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
+}
+
+body > .subdomain-navigator ul.main-site {
+  margin: 0 0 1em 0;
+}
+
+body > .subdomain-navigator ul.subdomain-menu li {
+  font-size: 1.125em;
+}
+
+body > .subdomain-navigator ul.main-site li {
+  font-size: 0.9em;
 }
 
 body > .subdomain-navigator ul > li {
