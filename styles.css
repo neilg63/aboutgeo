@@ -4,13 +4,15 @@ body > .subdomain-navigator {
   left: 0;
   width: 20em;
   background-color: yellow;
+  z-index: 102;
 }
 
-body > .subdomain-navigator .toggle-subdomain-menu {
+.toggle-subdomain-menu {
   font-size: 2em;
   position: absolute;
   top: 0.25em;
   left: 0.25em;
+  
 }
 
 body > .subdomain-navigator ul {
