@@ -139,7 +139,7 @@ body .subdomain-info .close:hover {
   transform: scale(2.5);
 }
 
-body.show-subdomain-menu > .subdomain-navigator div.inner,
+body.show-subdomain-menu > .subdomain-navigator > div.inner,
 body.show-subdomain-menu > .subdomain-info {
   opacity: 1;
   pointer-events: all;
