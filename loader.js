@@ -53,6 +53,7 @@
     const toggleInner = document.createElement('div');
     toggleInner.setAttribute('class', 'inner control-icon');
     toggleInner.textContent = 'ⓘ';
+    document.body.classList.add('subdomain-' + subKey);
     toggleElement.appendChild(toggleInner);
     toggleElement.setAttribute('class', 'toggle-subdomain-menu');
     toggleElement.addEventListener('click', (e) => {
