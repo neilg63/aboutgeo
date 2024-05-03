@@ -22,6 +22,7 @@ body > .subdomain-navigator {
 
 .toggle-subdomain-menu .inner {
   color: #000066;
+  user-select: none;
 }
 
 .toggle-subdomain-menu:hover .inner {
