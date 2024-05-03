@@ -1,15 +1,30 @@
 (function () {
+
+  const addStyleAsLink = (url = '', rel = '', crossorigin = '') => {
+    const el = document.createElement('link');
+    el.href = url;
+    el.rel = rel;
+    if (typeof crossorigin === 'string' && crossorigin.length > 2) {
+      el.setAttribute('crossorigin', crossorigin);
+    }
+    document.head.appendChild(el);
+  }
+
   const remoteUrl = 'https://www.multifaceted.info/subdomain-info';
   
   const ts = Date.now() % 1000000;
   const qs = '?ts=' + ts.toString();
   const cssFile = [remoteUrl, 'styles.css'].join('/') + qs;
-  const el = document.createElement('link');
+  /* const el = document.createElement('link');
   el.rel = 'stylesheet';
   el.crossorigin = 'anonymous';
   el.media = 'all'
   el.href = cssFile;
-  document.head.appendChild(el);
+  document.head.appendChild(el); */
+  addStyleAsLink('https://fonts.googleapis.com','preconnect');
+  addStyleAsLink('https://fonts.gstatic.com','preconnect','crossorigin');
+  addStyleAsLink('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap','stylesheet');
+  addStyleAsLink(cssFile,'stylesheet');
 
   const matchKey = (currentSub) => {
     switch (currentSub) {
