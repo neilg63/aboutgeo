@@ -14,9 +14,9 @@ body > .subdomain-navigator {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0.125em;
+  padding: 0.125em 0.125em 0 0;
   background-color: rgba(255, 255, 255, 0.75);
-  border-bottom-right-radius: .5em;
+  border-bottom-right-radius: .625em;
 }
 
 .toggle-subdomain-menu .inner {

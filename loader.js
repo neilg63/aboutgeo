@@ -11,6 +11,16 @@
   el.href = cssFile;
   document.head.appendChild(el);
 
+  const matchKey = (currentSub) => {
+    switch (currentSub) {
+      case "geo":
+      case "geotimezone":
+      case "astroui":
+        return currentSub;
+      default:
+        return "geo";
+    }
+  }
 
   const toggleBodyClass = (key = '', mode = 0) => {
     const cn = ['show', key].join('-');
@@ -29,10 +39,16 @@
     toggleBodyClass(key, -1);
   }
   const menuUrl = [remoteUrl, 'menu.html'].join('/') + qs;
+  const currentSub = window.location.host.split('.').shift();
+  const subKey = matchKey(currentSub);
   fetch(menuUrl).then(response => response.text()).then(menu => {
     const innerNav = document.createElement('nav');
     innerNav.classList.add('subdomain-navigator');
     innerNav.innerHTML = menu;
+    const remEl = innerNav.querySelector('li.' + subKey);
+    if (remEl) {
+      remEl.parentNode.removeChild(remEl);
+    }
     const toggleElement = document.createElement('div');
     const toggleInner = document.createElement('div');
     toggleInner.setAttribute('class', 'inner control-icon');
