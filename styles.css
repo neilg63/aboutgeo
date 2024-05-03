@@ -90,6 +90,7 @@ body > .subdomain-navigator ul > li a {
   color: #000066;
   text-decoration: none;
   transition: color 0.333s ease-in-out;
+  white-space: nowrap;
 }
 
 body > .subdomain-navigator ul > li a:hover {
