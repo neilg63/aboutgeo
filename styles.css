@@ -43,6 +43,9 @@ body > .subdomain-navigator > .inner h3 {
   font-size: 1em;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.125rem;
+  border-bottom: dotted 1px black;
 }
 
 
@@ -95,6 +98,7 @@ body > .subdomain-navigator ul > li a:hover {
 
 body > .subdomain-navigator > div.inner,
 body .subdomain-info {
+  font-family: "M PLUS Rounded 1c", sans-serif;
   opacity: 0;
   pointer-events: none;
   text-align: left;
