@@ -124,8 +124,31 @@ body .subdomain-info {
   top: 9rem;
   left: 2.5%;
   width: 95%;
-  max-width: 36rem;
   padding: 1em;
+  max-height: calc(100vh - 10rem);
+  overflow-y: auto;
+}
+
+@media (min-width: 50em) {
+  body .subdomain-info {
+    max-width: 40em;
+  }
+}
+
+@media (min-width: 70em) {
+  body .subdomain-info {
+    max-width: 50em;
+  }
+}
+
+@media (min-width: 90em) {
+  body .subdomain-info {
+    max-width: 60em;
+  }
+}
+
+body .subdomain-info > .inner {
+  position: relative;
 }
 
 body .subdomain-info .close {
