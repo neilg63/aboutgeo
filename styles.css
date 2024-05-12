@@ -153,7 +153,7 @@ body .subdomain-info > .inner {
   height: auto;
 }
 
-body .subdomain-info > .inner .content {
+body .subdomain-info > .inner .inner-content {
   position: relative;
   height: auto;
 }
