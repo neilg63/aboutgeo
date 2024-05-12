@@ -126,7 +126,7 @@ body .subdomain-info {
   width: 95%;
   padding: 1em;
   max-height: calc(100vh - 10rem);
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (min-width: 50em) {
@@ -149,6 +149,13 @@ body .subdomain-info {
 
 body .subdomain-info > .inner {
   position: relative;
+  overflow-y: auto;
+  height: auto;
+}
+
+body .subdomain-info > .inner .content {
+  position: relative;
+  height: auto;
 }
 
 body .subdomain-info .close {
